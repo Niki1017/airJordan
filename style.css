@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container {
+  margin: auto;
+  width: calc(100% - 48px);
+  max-width: 1440px;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Top header */
+header .top {
+  background: #f5f5f5;
+  padding: 8px 0;
+  font-size: 12px;
+}
+
+header .top .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .top .top-left ul {
+  display: flex;
+  gap: 24px;
+}
+
+header .top .top-left ul li a,
+header .top .right a {
+  color: #111;
+  font-size: 12px;
+}
+
+/* Bottom header */
+header .bottom {
+  padding: 16px 0;
+  /* border-bottom: 1px solid #e5e5e5; */
+}
+
+header .bottom .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .bottom .left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.boots-container {
+  text-align: center;
+}
+
+header .bottom .left ul {
+  display: flex;
+  gap: 24px;
+}
+
+/* header .bottom .left ul li {
+  background-color: aqua;
+} */
+
+header .bottom .left ul li a {
+  font-size: 16px;
+  position: relative;
+}
+
+header .bottom .left ul li a span {
+  position: absolute;
+  top: -15px;
+  right: -30px;
+  background: #fe0000;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 40px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+header .bottom .right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+header .bottom .right a {
+  display: flex;
+  align-items: center;
+}
+
+.shipping {
+  margin-left: 15px;
+}
+
+.air-title {
+  font-size: 140px;
+  font-weight: 600;
+  text-align: center;
+  color: #33333300;
+  margin-top: 60px;
+  -webkit-text-stroke: 1px #0C315F;
+}
+
+.jordan-title {
+  animation: 10s infinite title;
+  font-size: 160px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: -100px;
+  background: linear-gradient(to right, #4280CF, #3975C0, #0C315F, #0A2444, #03234B, #4280CF);
+  background-clip: text;
+  color: transparent;
+  background-size: 200% 100%;
+  font-weight: bold;
+}
+
+@keyframes title {
+  0% {
+    background-position: left;
+  }
+
+  50% {
+    background-position: right;
+  }
+
+  100% {
+    background-position: left;
+  }
+}
+
+.boots {
+  margin-top: -210px;
+}
+
+.justDoIt,
+.featured {
+  text-align: center;
+}
+
+.justDoIt h2,
+.featured h2,
+.picks h2 {
+  margin-bottom: 15px;
+  font-size: 60px;
+}
+
+.justDoIt p,
+.featured p,
+.picks p {
+  font-size: 24px;
+  color: #959799;
+}
+
+.cards .card {
+  position: relative;
+  display: inline-block;
+  margin-top: 60px;
+  width: 300px;
+  border-radius: 8px;
+  height: 400px;
+  background-color: aqua;
+}
+
+.card-one {
+  background-image: url("card 1.png");
+}
+
+.card-one p,
+.card-two p,
+.card-three p,
+.card-four p {
+  color: white;
+}
+
+.card-two {
+  background-image: url("card 2.png");
+}.card-three {
+  background-image: url("card 3.png");
+}.card-four {
+  background-image: url("card 4.png");
+}
+
+.cards .card p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.featured h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.featured p,
+.picks p {
+  margin-bottom: 60px;
+}
+
+.picks {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.picks .photos img {
+  margin: 30px;
+}
