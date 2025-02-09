@@ -253,6 +253,8 @@ header .bottom .right a {
 }
 
 .rewardingButton {
+  display: inline-block;
+  margin-top: 15px;
   background-color: #111;
   color: #fff;
   border-radius: 8px;
